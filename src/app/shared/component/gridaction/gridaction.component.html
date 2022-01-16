@@ -1,0 +1,7 @@
+<label for="file-input_{{params.rowIndex}}">
+</label>
+
+<div class="upload-btn-wrapper">
+    <button (click)="invokeUploadFile()" class="uploading-btn btn-primary" title="Upload">Upload</button>
+    <input id="file-input_{{params.rowIndex}}" class="input_icon" (change)="onFileSelected($event)" type="file"/>
+  </div>

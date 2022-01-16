@@ -1,0 +1,21 @@
+ul {
+    border-bottom: none !important;
+    li {
+        border: 5px solid white;
+        border-radius: 10px;
+        margin-bottom: 2px !important;
+        width: 150px !important;
+        text-align: center !important;
+    }
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    border-color: white !important;
+    font-weight: bold !important;
+    color: #007bff !important;
+}
+
+.disable {
+    pointer-events: none;
+    opacity: 0.5;
+}

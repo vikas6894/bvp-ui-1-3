@@ -1,0 +1,5 @@
+<ul ngbNav [activeId]="selectedNavItem" class="nav-tabs" orientation="vertical">
+    <li [ngbNavItem]="link.id" *ngFor="let link of links" [ngClass]="{'disable': link.id > 3}">
+      <a ngbNavLink (click)="goToPage(link.fragment)">{{ link.title }}</a>
+    </li>
+  </ul>
