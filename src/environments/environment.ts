@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  bvp_endpoint: 'https://bvp-api-v2.herokuapp.com',
+  bvp_endpoint: 'http://172.16.1.105:8080',
   production: false
 };
 
