@@ -823,5 +823,259 @@ export class TableData {
             "redText": "",
             "isTextArea": true
         },
+        {
+            "id": 39,
+            "questionid": "2_0_1",
+            "criteria": 2,
+            "displayQuesID": "2.1",
+            "question": "Number of students during the year.",
+            "greenText": "",
+            "redText": "",
+            "columnDefs": [
+                {"headerName": "SN", "field": "SN", "width": 100},
+                {"headerName": "Year of enrollment", "field": "Year of enrollment", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Name", "field": "Name", "width": 300, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Student enrollment number", "field": "Student enrollment number", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Date of enrolment", "field": "Date of enrolment", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Filename", "field": "Filename", "width": 300, "editable": false, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Action", "field": "Action", "width": 200, "editable": false, "cellRenderer": "GridactionComponent"}
+            ],
+            "rowData": {"SN": "", "Year of enrollment": "", "Name": "", "Student enrollment number": "", "Date of enrolment": "", "Filename": "Not Available"}
+        },
+        {
+            "id": 40,
+            "questionid": "2_1_1",
+            "criteria": 2,
+            "displayQuesID": "2.1.1",
+            "question": "Demand Ratio.<br>2.1.1.1: Number of seats available during the year.",
+            "greenText": "",
+            "redText": "",
+            "firstTableHeading": "Year",
+            "columnDefs": [
+                {"headerName": "SN", "field": "SN", "width": 100},
+                {"headerName": "Programme name", "field": "Programme name", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Programme Code", "field": "Programme Code", "width": 300, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Number of seats available/sanctioned", "field": "Number of seats available/sanctioned", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Number of eligible applications received", "field": "Number of eligible applications received", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Number of Students admitted", "field": "Number of Students admitted", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Filename", "field": "Filename", "width": 300, "editable": false, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Action", "field": "Action", "width": 200, "editable": false, "cellRenderer": "GridactionComponent"}
+            ],
+            "rowData": {"SN": "", "Programme name": "", "Programme Code": "", "Number of seats available/sanctioned": "", "Number of eligible applications received": "", "Number of Students admitted": "", "Filename": "Not Available"}
+        },
+        {
+            "id": 41,
+            "questionid": "2_1_2",
+            "criteria": 2,
+            "displayQuesID": "2.1.2",
+            "question": "Number of seats filled  against seats reserved for various categories as per applicable  reservation policy during the year.(Excluding Supernumerary Seats).<br>2.1.2.1: Number of actual students admitted from the reserved categories during the year.",
+            "greenText": "",
+            "redText": "",
+            "columnDefs": [
+                {"headerName": "SN", "field": "SN", "width": 100},
+                {"headerName": "Year", "field": "Year", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Number of  seats earmarked for reserved category as per GOI or State Government rule", "width": 750, "children" : [
+                    {"headerName": "SC", "field": "SC_1", "width": 150, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                    {"headerName": "ST", "field": "ST_1", "width": 150, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                    {"headerName": "OBC", "field": "OBC_1", "width": 150, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                    {"headerName": "Gen", "field": "Gen_1", "width": 150, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                    {"headerName": "Others", "field": "Others_1", "width": 150, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                ]},
+                {"headerName": "Number of students admitted from the reserved category", "width": 750, "children" : [
+                    {"headerName": "SC", "field": "SC_2", "width": 150, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                    {"headerName": "ST", "field": "ST_2", "width": 150, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                    {"headerName": "OBC", "field": "OBC_2", "width": 150, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                    {"headerName": "Gen", "field": "Gen_2", "width": 150, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                    {"headerName": "Others", "field": "Others_2", "width": 150, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                ]},
+                {"headerName": "Filename", "field": "Filename", "width": 300, "editable": false, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Action", "field": "Action", "width": 200, "editable": false, "cellRenderer": "GridactionComponent"}
+            ],
+            "rowData": {"SN": "", "Year": "", "SC_1": "", "ST_1": "", "OBC_1": "", "Gen_1": "", "Others_1": "", "SC_2": "", "ST_2": "", "OBC_2": "", "Gen_2": "", "Others_2": "", "Filename": "Not Available"}
+        },
+        {
+            "id": 42,
+            "questionid": "2_0_2",
+            "criteria": 2,
+            "displayQuesID": "2.2",
+            "question": "Number of outgoing / final year students during the year.",
+            "greenText": "",
+            "redText": "",
+            "columnDefs": [
+                {"headerName": "SN", "field": "SN", "width": 100},
+                {"headerName": "Year of passing final year exam", "field": "Year of passing final year exam", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Name of students", "field": "Name of students", "width": 300, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Enrollment number", "field": "Enrollment number", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Filename", "field": "Filename", "width": 300, "editable": false, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Action", "field": "Action", "width": 200, "editable": false, "cellRenderer": "GridactionComponent"}
+            ],
+            "rowData": {"SN": "", "Year of passing final year exam": "", "Name of students": "", "Enrollment number": "", "Filename": "Not Available"}
+        },
+        {
+            "id": 43,
+            "questionid": "2_0_3",
+            "criteria": 2,
+            "displayQuesID": "2.3",
+            "question": "Number of students appeared in the University examination during the year.",
+            "greenText": "",
+            "redText": "",
+            "columnDefs": [
+                {"headerName": "SN", "field": "SN", "width": 100},
+                {"headerName": "Year", "field": "Year", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Name of students", "field": "Name of students", "width": 300, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Date of appearing in exam", "field": "Date of appearing in exam", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Roll number", "field": "Roll number", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Filename", "field": "Filename", "width": 300, "editable": false, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Action", "field": "Action", "width": 200, "editable": false, "cellRenderer": "GridactionComponent"}
+            ],
+            "rowData": {"SN": "", "Year": "", "Name of students": "", "Date of appearing in exam": "", "Roll number": "", "Filename": "Not Available"}
+        },
+        {
+            "id": 44,
+            "questionid": "2_4_1",
+            "criteria": 2,
+            "displayQuesID": "2.4.1",
+            "question": "Number of full time teachers against sanctioned posts during the year.",
+            "greenText": "",
+            "redText": "",
+            "columnDefs": [
+                {"headerName": "SN", "field": "SN", "width": 100},
+                {"headerName": "Name of the Full-time teacher", "field": "Name of the Full-time teacher", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "PAN", "field": "PAN", "width": 300, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Designation", "field": "Designation", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Year of appointment", "field": "Year of appointment", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Nature of appointment (Against Sanctioned post, temporary, permanent)", "field": "Nature of appointment (Against Sanctioned post, temporary, permanent)", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Name of the Department", "field": "Name of the Department", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Total years of Experience in the same institution", "field": "Total years of Experience in the same institution", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Is the teacher still serving the institution/If not last year of the service of Faculty to the Institution", "field": "Is the teacher still serving the institution/If not last year of the service of Faculty to the Institution", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Filename", "field": "Filename", "width": 300, "editable": false, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Action", "field": "Action", "width": 200, "editable": false, "cellRenderer": "GridactionComponent"}
+            ],
+            "rowData": {"SN": "", "Name of the Full-time teacher": "", "PAN": "", "Designation": "", "Year of appointment": "", "Nature of appointment (Against Sanctioned post, temporary, permanent)": "", "Name of the Department": "", "Total years of Experience in the same institution": "", "Is the teacher still serving the institution/If not last year of the service of Faculty to the Institution": "", "Filename": "Not Available"}
+        },
+        {
+            "id": 45,
+            "questionid": "2_4_2",
+            "criteria": 2,
+            "displayQuesID": "2.4.2",
+            "question": "Number of full time teachers with Ph.D./D.M/M.Ch./D.N.B Superspeciality/D.Sc./D'Lit. during the year.",
+            "greenText": "",
+            "redText": "",
+            "columnDefs": [
+                {"headerName": "SN", "field": "SN", "width": 100},
+                {"headerName": "Name  of full time teacher with PhD, DM, MCh, DNB Superspeciality, DSc, DLit", "field": "Name  of full time teacher with PhD, DM, MCh, DNB Superspeciality, DSc, DLit", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Qualification (PhD, DM, MCh, DNB Superspeciality, DSc, DLit) and Year of obtaining", "field": "Qualification (PhD, DM, MCh, DNB Superspeciality, DSc, DLit) and Year of obtaining", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Whether recognised as research Guide for PhD, DM, MCh, DNB Superspeciality, DSc, DLit", "field": "Whether recognised as research Guide for PhD, DM, MCh, DNB Superspeciality, DSc, DLit", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Year of Recognition as Research Guide", "field": "Year of Recognition as Research Guide", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Filename", "field": "Filename", "width": 300, "editable": false, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Action", "field": "Action", "width": 200, "editable": false, "cellRenderer": "GridactionComponent"}
+            ],
+            "rowData": {"SN": "", "Name  of full time teacher with PhD, DM, MCh, DNB Superspeciality, DSc, DLit": "", "Qualification (PhD, DM, MCh, DNB Superspeciality, DSc, DLit) and Year of obtaining": "", "Whether recognised as research Guide for PhD, DM, MCh, DNB Superspeciality, DSc, DLit": "", "Year of Recognition as Research Guide": "", "Filename": "Not Available"}
+        },
+        {
+            "id": 46,
+            "questionid": "2_4_3",
+            "criteria": 2,
+            "displayQuesID": "2.4.3",
+            "question": "Total teaching experience of full time teachers in the same institution during the year.",
+            "greenText": "",
+            "redText": "",
+            "columnDefs": [
+                {"headerName": "SN", "field": "SN", "width": 100},
+                {"headerName": "Name of the Full-time teacher", "field": "Name of the Full-time teacher", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "PAN", "field": "PAN", "width": 300, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Designation", "field": "Designation", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Year of appointment", "field": "Year of appointment", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Nature of appointment (Against Sanctioned post, temporary, permanent)", "field": "Nature of appointment (Against Sanctioned post, temporary, permanent)", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Name of the Department", "field": "Name of the Department", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Total years of Experience in the same institution", "field": "Total years of Experience in the same institution", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Is the teacher still serving the institution/If not last year of the service of Faculty to the Institution", "field": "Is the teacher still serving the institution/If not last year of the service of Faculty to the Institution", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Filename", "field": "Filename", "width": 300, "editable": false, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Action", "field": "Action", "width": 200, "editable": false, "cellRenderer": "GridactionComponent"}
+            ],
+            "rowData": {"SN": "", "Name of the Full-time teacher": "", "PAN": "", "Designation": "", "Year of appointment": "", "Nature of appointment (Against Sanctioned post, temporary, permanent)": "", "Name of the Department": "", "Total years of Experience in the same institution": "", "Is the teacher still serving the institution/If not last year of the service of Faculty to the Institution": "", "Filename": "Not Available"}
+        },
+        {
+            "id": 47,
+            "questionid": "2_4_4",
+            "criteria": 2,
+            "displayQuesID": "2.4.4",
+            "question": "Total number of full time teachers who received awards, recognition, fellowships at State, National, International level from Government/Govt. recognised bodies during the year.<br><ol><li>Commendation and monetary incentive at a University function</li><li>Commendation and medal at a University function</li><li>Certificate of honor</li><li>Announcement in the Newsletter / website</li></ol>",
+            "greenText": "",
+            "redText": "",
+            "columnDefs": [
+                {"headerName": "SN", "field": "SN", "width": 100},
+                {"headerName": "Name of full time  teachers receiving awards from state level,national level, international level", "field": "Name of full time  teachers receiving awards from state level,national level, international level", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Year of Award", "field": "Year of Award", "width": 300, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": " PAN", "field": " PAN", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Designation", "field": "Designation", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Name of the award, fellowship, received from Government or Government recognised bodies", "field": "Name of the award, fellowship, received from Government or Government recognised bodies", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Name of the Awarding Agency", "field": "Name of the Awarding Agency", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Incentives/Type of the incentive given by the HEI in recognition of the award", "field": "Incentives/Type of the incentive given by the HEI in recognition of the award", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Link to the relevant documents", "field": "Link to the relevant documents", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Filename", "field": "Filename", "width": 300, "editable": false, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Action", "field": "Action", "width": 200, "editable": false, "cellRenderer": "GridactionComponent"}
+            ],
+            "rowData": {"SN": "", "Name of full time  teachers receiving awards from state level,national level, international level": "", "Year of Award": "", " PAN": "", "Designation": "", "Name of the award, fellowship, received from Government or Government recognised bodies": "", "Name of the Awarding Agency": "", "Incentives/Type of the incentive given by the HEI in recognition of the award": "", "Link to the relevant documents": "", "Filename": "Not Available"}
+        },
+        {
+            "id": 48,
+            "questionid": "2_5_1",
+            "criteria": 2,
+            "displayQuesID": "2.5.1",
+            "question": "Number of full time teachers with Ph.D./D.M/M.Ch./D.N.B Superspeciality/D.Sc./D'Lit. during the year.<br>2.5.1.1: Number of days from the date of last semester-end/ year- end examination till the declaration of results during the year.",
+            "greenText": "",
+            "redText": "",
+            "columnDefs": [
+                {"headerName": "SN", "field": "SN", "width": 100},
+                {"headerName": "Programme Name", "field": "Programme Name", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Programme Code", "field": "Programme Code", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Semester, year", "field": "Semester, year", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Last date of the last semester-end, year- end examination", "field": "Last date of the last semester-end, year- end examination", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Date of declaration of results of semester-end, year- end examination", "field": "Date of declaration of results of semester-end, year- end examination", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Filename", "field": "Filename", "width": 300, "editable": false, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Action", "field": "Action", "width": 200, "editable": false, "cellRenderer": "GridactionComponent"}
+            ],
+            "rowData": {"SN": "", "Programme Name": "", "Programme Code": "", "Semester, year": "", "Last date of the last semester-end, year- end examination": "", "Date of declaration of results of semester-end, year- end examination": "", "Filename": "Not Available"}
+        },
+        {
+            "id": 49,
+            "questionid": "2_5_4",
+            "criteria": 2,
+            "displayQuesID": "2.5.4",
+            "question": "Status of automation of Examination division along with approved Examination Manual.<br><ol><li>100% automation of entire division & implementation of Examination Management System (EMS)</li><li>Only student registration, Hall ticket issue & Result Processing</li><li>Only student registration and result processing</li><li>Only result processing</li><li>Only manual methodology</li></ol>",
+            "greenText": "",
+            "redText": "",
+            "columnDefs": [
+                {"headerName": "SN", "field": "SN", "width": 100},
+                {"headerName": "100 percent automation of entire division & implementation of Examination Management System (EMS) (Yes,No)", "field": "100 percent automation of entire division & implementation of Examination Management System (EMS) (Yes,No)", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Student registration, Hall ticket issue & Result Processing are automated (Yes,No)", "field": "Student registration, Hall ticket issue & Result Processing are automated (Yes,No)", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Student registration and result processing are automated (Yes,No)", "field": "Student registration and result processing are automated (Yes,No)", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Result processing is only automated (Yes,No)", "field": "Result processing is only automated (Yes,No)", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Follow manual methods (Yes,No)", "field": "Follow manual methods (Yes,No)", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Filename", "field": "Filename", "width": 300, "editable": false, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Action", "field": "Action", "width": 200, "editable": false, "cellRenderer": "GridactionComponent"}
+            ],
+            "rowData": {"SN": "", "100 percent automation of entire division & implementation of Examination Management System (EMS) (Yes,No)": "", "Student registration, Hall ticket issue & Result Processing are automated (Yes,No)": "", "Student registration and result processing are automated (Yes,No)": "", "Result processing is only automated (Yes,No)": "", "Follow manual methods (Yes,No)": "", "Filename": "Not Available"}
+        },
+        {
+            "id": 50,
+            "questionid": "2_6_3",
+            "criteria": 2,
+            "displayQuesID": "2.6.3",
+            "question": "Number of students passed during the year.",
+            "greenText": "",
+            "redText": "",
+            "columnDefs": [
+                {"headerName": "SN", "field": "SN", "width": 100},
+                {"headerName": "Program Code", "field": "Program Code", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Program Name", "field": "Program Name", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Number of students appeared in the final year examination", "field": "Number of students appeared in the final year examination", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Number of students passed in final year examination", "field": "Number of students passed in final year examination", "width": 400, "editable": true, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Filename", "field": "Filename", "width": 300, "editable": false, "autoHeight": true, "cellClass": "cell-wrap-text"},
+                {"headerName": "Action", "field": "Action", "width": 200, "editable": false, "cellRenderer": "GridactionComponent"}
+            ],
+            "rowData": {"SN": "", "Program Code": "", "Program Name": "", "Number of students appeared in the final year examination": "", "Number of students passed in final year examination": "", "Filename": "Not Available"}
+        },
     ]
 }

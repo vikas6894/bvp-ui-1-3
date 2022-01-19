@@ -55,12 +55,12 @@ export class LandingComponent implements OnInit {
     if(localStorage.getItem('firstTimeLogin') === 'true') {
       this.open();
     }
-    if(this.question_id === '3_1_1') {
+    if(this.question_id === '3_1_1' || this.question_id === '1_1_1' || this.question_id === '2_0_1') {
       this.isPrevDisabled = true;
     } else {
       this.isPrevDisabled = false;
     }
-    if(this.question_id === '3_7_2' || this.question_id === '1_4_2') {
+    if(this.question_id === '3_7_2' || this.question_id === '1_4_2' || this.question_id === '2_6_3') {
       this.isLastQues = true;
     } else {
       this.isLastQues = false;
@@ -93,6 +93,9 @@ export class LandingComponent implements OnInit {
       } else {
         this.columnDefs = filteredQues[0].columnDefs;
         this.defaultRow = filteredQues[0].rowData;
+        if(filteredQues[0].firstTableHeading) {
+        this.firstTableHeading = filteredQues[0].firstTableHeading;
+        }
       }
       this.isTextArea = filteredQues[0].isTextArea;
       localStorage.setItem('id', this.id.toString());
@@ -290,6 +293,15 @@ export class LandingComponent implements OnInit {
     } else if (localStorage.getItem('criteria') === '3') {
       this.question_id = '3_1_1';
       this.router.navigateByUrl('landing/3/3_1_1');
+      this.isLastQues = false;
+      this.isPrevDisabled = true;
+      this.rowData = [];
+      this.rowData2 = [];
+      this.defaultRow = undefined;
+      this.defaultRow2 = undefined;
+    } else if (localStorage.getItem('criteria') === '2') {
+      this.question_id = '2_0_1';
+      this.router.navigateByUrl('landing/2/2_0_1');
       this.isLastQues = false;
       this.isPrevDisabled = true;
       this.rowData = [];

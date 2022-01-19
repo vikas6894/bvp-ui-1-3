@@ -11,7 +11,7 @@ export class SidebarComponent implements OnInit {
   selectedNavItem;
   links = [
     { title: 'Criteria 1', fragment: '/landing/1/1_1_1', id: "1" },
-    { title: 'Criteria 2', fragment: '/landing/2/2_1_1', id: "2" },
+    { title: 'Criteria 2', fragment: '/landing/2/2_0_1', id: "2" },
     { title: 'Criteria 3', fragment: '/landing/3/3_1_1', id: "3" },
     { title: 'Criteria 4', fragment: '/landing/4/4_1_1', id: "4" },
     { title: 'Criteria 5', fragment: '/landing/5/5_1_1', id: "5" },
